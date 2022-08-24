@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+:root {
+    /* ## Colors
+    ### Primary */
+    --Desaturated-Red: hsl(0, 36%, 70%);
+    --Soft-Red: hsl(0, 93%, 68%);
+    
+    /* ### Neutral */
+    --Dark-Grayish-Red: hsl(0, 6%, 24%);
+    
+    /* ### Gradients */
+    /* --Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+    --Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) */
+}
+
+*{
+    margin: auto;
+    padding: 0;
+}
+body {
+    max-width: 375px;
+    height: 100%;
+    vertical-align: middle;
+    background-color: var(--Dark-Grayish-Red);
+    font-size: 15px;
+    font-family: "Josefin Sans";
+    padding: 5rem 0 0 0;
+}
+.wrapper {
+    padding: 2rem 0 2rem 0;
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    overflow: hidden;
+}
+.logo {
+    padding: 0 0 2rem 2rem;
+}
+.logo  img {
+    max-width: 30%;
+}
+.hero{
+    padding: 0 0 3rem;
+}
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--Desaturated-Red);
+    font-weight: 300;
+    letter-spacing: 10px;
+    font-size: 40px;
+}
+h1 a {
+    color: var(--Dark-Grayish-Red); 
+    font-weight: 600;
+}
+p {
+    padding: 1rem 1.7rem 2rem 1.7rem;
+    text-align: center;
+    color: var(--Desaturated-Red);
+    font-weight: 400;
+    font-family: inherit;
+    line-height: 1.5;
+}
+.emailinput {
+    padding: 2rem;
+}
+.emailinput input {
+    width: 85%;
+    height: 5vh;
+    border: solid 1px  var(--Desaturated-Red);
+    border-radius: 25px;
+    padding: 0 -2rem 0 2rem;
+    background: transparent;
+    padding: 0 0 0 2rem;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+}
+.emailinput input::placeholder{
+    color: var(--Desaturated-Red);
+    opacity: 50%;
+
+}
+.goemail {
+    position: relative;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    top: -3rem;
+    right: -15.5rem;
+    height: 3rem;
+    width: 4rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: box-shadow 0.5s ease-in-out;
+}
+.goemail:hover{
+    box-shadow: 0 5px 5px 0 hsl(0, 80%, 86%);
+    transition: box-shadow 0.5s ease-in-out;
+}
+.errortext {
+    position: relative;
+    top: -2rem;
+    color: red;
+    padding: 0 0 0 2rem;
+    text-align: left;
+    font-weight: 300;
+}
+.attribution { 
+    font-size: 15px; 
+    text-align: center; 
+    padding-top: 5rem;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+ }
+
+ @media (min-width: 1000px) {
+    body {
+        min-width: 1000px;
+       
+    }   
+    
+}
